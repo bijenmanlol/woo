@@ -26,6 +26,9 @@ body::-webkit-scrollbar {
 }
 
 @media only screen and (max-width: 1150px) {
+    main{
+        padding-bottom: 5em!important;
+    }
     .boxes{
         flex-direction: column!important;
     }
@@ -36,6 +39,12 @@ body::-webkit-scrollbar {
         display: block!important;
     }
     .page-link{
+        display: none!important;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .footer-box{
         display: none!important;
     }
 }
@@ -114,6 +123,7 @@ main{
     background-color: #ffffff;
     width: 100%;
     min-height: 40em;
+    padding-bottom: 5em;
     color: #b12424;
 }
 
@@ -166,4 +176,34 @@ main{
 .box a:hover{
     color: #d4a1a1;
     border-bottom: 2px solid #d4a1a1;
+}
+
+footer{
+    height: 18em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-icon{
+    width: 16em;
+}
+
+.footer-box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 12em;
+    width: 20em;
+}
+
+.footer-link{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2em;
+    margin: 0.25em;
+}
+
+.footer-link:hover{
+    text-decoration: underline;
 }
